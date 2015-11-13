@@ -3,7 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Mide Editor v.0.12.</title>
+	<link rel="stylesheet" href="css/codemirror.css">
+	<link rel="stylesheet" href="css/eclipse.css">
+	<title>Mide Editor v.0.15.</title>
 </head>
 <body>
 	<table border="0">
@@ -11,6 +13,16 @@
 		<tr><td><div id="controls_board"><div id="actual_controls"></div></div></td></tr>
 		<tr><td><div id="controls_board"><div id="all_controls"></div></div></td></tr>
 	</table>
+	<script src="js/codemirror.js"></script>
+	<script src="js/javascript.js"></script>
+	<script>
+	  var editor = CodeMirror.fromTextArea(document.getElementById("marea"), {
+	    lineNumbers: true,
+	    styleActiveLine: true,
+	    matchBrackets: true,
+	  });
+	  editor.setSize("100%","100%");
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/mide_js.js"></script>
 	<script src="js/mide.js"></script>
