@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#marea{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#controls_board{
+	bottom: 0;
+	position: fixed;
+	background: #ddd;
+	width: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap;
+}
+
+.butt{
+	float: left;
+	padding: 1em;
+	border: 1px dashed #333;
+}
+
+#actual_controls, #all_controls {
+	width: 1000%;
+	float: left;
+}
