@@ -38,3 +38,12 @@ table{
 	top:0;
 	bottom: 0;
 }
+
+.CodeMirror {
+  height: 100%;
+}
+
+#mar{
+	height: 100%;
+	width: 100%;
+}
